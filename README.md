@@ -44,6 +44,7 @@ This application integrates multiple state-of-the-art AI models to provide:
 ### Step 2: Upload Model Files
 Upload custom YOLOv11 model trained for license plate detection
 - `/kaggle/input/license_plate_detect_yolo11/pytorch/default/1/best.pt`
+
 Kaggle model link: https://www.kaggle.com/models/suhailaaboubakr/license_plate_detect_yolo11/
 
 ## 🏗️ Model Architecture
