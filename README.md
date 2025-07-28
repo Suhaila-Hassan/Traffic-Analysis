@@ -2,7 +2,7 @@
 
 A comprehensive Gradio application that combines Vision-Language Models (VLLMs) with computer vision techniques to analyze traffic scenes and detect license plates with high accuracy.
 
-## 🎯 Overview
+## Overview
 
 This application integrates multiple state-of-the-art AI models to provide:
 
@@ -11,7 +11,7 @@ This application integrates multiple state-of-the-art AI models to provide:
 3. **Text Extraction** - Using PaddleOCR with advanced preprocessing for text recognition
 4. **Structured Output** - JSON format combining all analysis results
 
-## ✨ Features
+## Features
 
 ### Core Capabilities
 - 🔍 **Multi-modal Analysis**: Combines vision and language understanding
@@ -27,7 +27,7 @@ This application integrates multiple state-of-the-art AI models to provide:
 - **VLLM Temperature** (0.1-1.0): Controls creativity/randomness in descriptions
 - **VLLM Top-p** (0.1-1.0): Controls diversity vs focus in language generation
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### Environment Requirements
 - **Platform**: Kaggle
@@ -47,7 +47,7 @@ Upload custom YOLOv11 model trained for license plate detection
 
 Kaggle model link: https://www.kaggle.com/models/suhailaaboubakr/license_plate_detect_yolo11/
 
-## 🏗️ Model Architecture
+## Model Architecture
 
 ### 1. Scene Understanding: LLaVA-NeXT
 - **Model**: `llava-hf/llava-v1.6-mistral-7b-hf`
@@ -138,7 +138,7 @@ The application outputs a structured JSON following the task specifications:
 }
 ```
 
-## 🎯 Prompt Engineering Rationale
+## Prompt Engineering Rationale
 
 ### Scene Description Prompt Design
 
@@ -183,20 +183,12 @@ Analyze this traffic scene in detail. Describe:
    - Resize large images before processing
    - Use appropriate batch sizes
    - Enable half-precision when supported
+   - Load models before inference
 
 3. **Accuracy Improvement**:
    - Use high-quality input images
    - Adjust confidence thresholds based on use case
    - Consider image preprocessing for difficult lighting
-
-## 📈 Expected Performance
-
-### Typical Results
-- **Scene Description**: Comprehensive 150-250 word analysis
-- **Detection Accuracy**: 85-95% for clearly visible plates
-- **OCR Accuracy**: 80-90% for standard license plates
-- **Processing Time**: 10-30 seconds per image on T4 GPU
-
 ### Limitations
 - Performance depends on image quality and lighting
 - OCR accuracy varies with plate condition and angle
