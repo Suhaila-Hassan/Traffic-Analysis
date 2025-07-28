@@ -30,9 +30,9 @@ This application integrates multiple state-of-the-art AI models to provide:
 ## 🛠️ Setup Instructions
 
 ### Environment Requirements
-- **Platform**: Google Colab with T4 GPU (12 GB VRAM minimum)
+- **Platform**: Kaggle
 - **Python**: 3.8+
-- **CUDA**: Compatible GPU for optimal performance
+- **CUDA**: Compatible GPU for optimal performance (Kaggle typically provides a T4 or P100 GPU)
 
 ### Step 1: Install Dependencies
 
@@ -42,14 +42,9 @@ This application integrates multiple state-of-the-art AI models to provide:
 ```
 
 ### Step 2: Upload Model Files
-
-```python
-from google.colab import files
-uploaded = files.upload()
-```
-
-**Required Files:**
-- `best.pt` - YOLOv11 model trained for license plate detection
+Upload custom YOLOv11 model trained for license plate detection
+- `/kaggle/input/license_plate_detect_yolo11/pytorch/default/1/best.pt`
+Kaggle model link: https://www.kaggle.com/models/suhailaaboubakr/license_plate_detect_yolo11/
 
 ## 🏗️ Model Architecture
 
@@ -83,6 +78,16 @@ uploaded = files.upload()
    - Top-p: 0.9 (default)
 3. **Click Submit**: Process the image
 4. **Review Results**: Scene description, plate details, and JSON output
+
+## Sample Test
+### Test Image 1
+<img width="1605" height="806" alt="test_image1" src="https://github.com/user-attachments/assets/3fad5398-f119-4989-81d5-58102cc792a8" />
+
+### Test Image 2
+<img width="1591" height="839" alt="test_image2" src="https://github.com/user-attachments/assets/b89a4b6d-78e4-4383-a9c2-fe4825e99737" />
+
+### Test Image 3
+<img width="1604" height="808" alt="test_image3" src="https://github.com/user-attachments/assets/856304d5-e8d3-47f4-847e-e8f1fd94b532" />
 
 ## 🎛️ Parameter Tuning Guide
 
