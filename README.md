@@ -24,7 +24,7 @@ This application integrates multiple state-of-the-art AI models to provide:
 ### Adjustable Parameters
 - **YOLO Confidence Threshold** (0.1-1.0): Controls detection sensitivity
 - **OCR Confidence Threshold** (0.0-1.0): Filters low-quality text recognition
-- **VLLM Temperature** (0.1-2.0): Controls creativity/randomness in descriptions
+- **VLLM Temperature** (0.1-1.0): Controls creativity/randomness in descriptions
 - **VLLM Top-p** (0.1-1.0): Controls diversity vs focus in language generation
 
 ## 🛠️ Setup Instructions
