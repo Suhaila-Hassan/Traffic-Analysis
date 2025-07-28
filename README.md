@@ -118,21 +118,22 @@ The application outputs a structured JSON following the task specifications:
 
 ```json
 {
-  "scene_description": "Detailed analysis of the traffic scene including vehicles, infrastructure, conditions, and safety considerations",
-  "total_plates_detected": ,
+  "scene_description": "",
+  "total_plates_detected": 1,
   "license_plates": [
     {
-      "bounding_box": [150, 200, 250, 240],
-      "text": "License Plate Text",
-      "confidence":
+      "bbox": [98, 82, 249, 140],
+      "detection_confidence": 0.5,
+      "plate_text": "",
+      "ocr_confidence": 0.9
     }
   ],
-  'parameters_used': {
-      'yolo_confidence_threshold': ,
-      'ocr_confidence_threshold': ,
-      'vllm_temperature': ,
-      'vllm_top_p': 
-  },
+  "parameters_used": {
+    "yolo_confidence_threshold": 0.5,
+    "ocr_confidence_threshold": 0.5,
+    "vllm_temperature": 0.7,
+    "vllm_top_p": 0.5
+  }
 }
 ```
 
